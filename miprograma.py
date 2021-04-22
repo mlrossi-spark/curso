@@ -12,18 +12,22 @@
 
 #apellido = input('Ingrese su apellido: ')
 
-clientes = int(input('Ingrese numero de clientes: '))
+#clientes = int(input('Ingrese numero de clientes: '))
 
-for i in range (clientes):
-    edad = int(input('Ingrese su edad: '))
-    if edad < 18:
-        condicion = 'menor'
-    elif edad < 65:
-        condicion = 'mayor'
-    elif edad <= 120:
-        condicion = 'jubilado'
-    else:
-        condicion = 'cadaver'
-    print (condicion)
-    break
+#for i in range (clientes):
+#    edad = int(input('Ingrese su edad: '))
+#    if edad < 18:
+#        condicion = 'menor'
+#    elif edad < 65:
+#        condicion = 'mayor'
+#    elif edad <= 120:
+#    else:
+#    print (condicion)
+#    print('Proceso de carga finalizado')
+
+i=1
+
+while i<10
+    print (i)
+    i += 1
 #print('Su nombre es: ' + nombre + ' ' + apellido + ' y usted es: ' + condicion)

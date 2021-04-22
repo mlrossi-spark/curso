@@ -1,26 +1,25 @@
-# Hacer un programa en el que:
-# 1-Se pregunte por el nombre de la persona
-# 2-Se pregunte por el apellido de la persona
-# 3-Se pregunte por la edad de la persona.
-# El formato de salida debe ser:
-# "Su nombre es: " + nombre + apellido + "y usted es " {condición de edad}
-# La condición de edad es:
-# 1. Si es menor de 18 escribir menor
-# 2. Si tiene entre 18 y 65 escribir mayor
-# 3. Si tiene entre 65 y 120 escribir jubilado
-# 4. Si tiene más escribir cadaver
+# 1. Crear un nuevo repositorio
+# 2. Tomar de base el programa de la clase pasada
+# 3. Vamos a modificar el programa para que solo tome como válidos números entre 1 y 120 (si pone un número entre -inf y 0 o 121 a inf debe volver a preguntar)
+# 4. Al inicio del programa preguntar cuantas personas registrar
+# 5. Hacer que el programa que se hizo se ejecute esas n veces que se pusieron en el punto 4
+# 6. Subir el programa al repositorio creado.
 
-nombre = input('Ingrese su nombre: ')
-apellido = input('Ingrese su apellido: ')
-edad = int(input('Ingrese su edad: '))
+n = int(input('Ingrese  la cantidad de registros: '))
 
-if edad < 18:
-    condicion = 'menor'
-elif edad < 65:
-    condicion = 'mayor'
-elif edad <= 120:
-    condicion = 'jubilado'
-else:
-    condicion = 'cadaver'
+for i in range(n):
+    nombre = input('Ingrese su nombre: ')
+    apellido = input('Ingrese su apellido: ')
 
-print('Su nombre es: ' + nombre + ' ' + apellido + ' y usted es: ' + condicion)
+    edad = 0
+    while edad<1 or edad>120:
+        edad = int(input('Ingrese su edad: '))
+
+    if edad < 18:
+        condicion = 'menor'
+    elif edad < 65:
+        condicion = 'mayor'
+    else:
+        condicion = 'jubilado'
+
+    print('Su nombre es: ' + nombre + ' ' + apellido + ' y usted es: ' + condicion)
