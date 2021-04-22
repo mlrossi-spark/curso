@@ -12,7 +12,7 @@ for i in range(n):
     apellido = input('Ingrese su apellido: ')
 
     edad = 0
-    while edad<1 or edad>120:
+    while edad < 1 or edad > 120:
         edad = int(input('Ingrese su edad: '))
 
     if edad < 18:
